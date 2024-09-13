@@ -18,7 +18,7 @@ function Game({ user }) {
     const fetchUserData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/users/${user.username}`
+          `https://react-game-mc90.onrender.com/api/users/${user.username}`
         );
         console.log("Fetched User Data:", response.data);
         setHighScore(response.data.highScore);
@@ -73,7 +73,7 @@ function Game({ user }) {
   const saveScore = async (newScore) => {
     try {
       console.log('Sending score to backend:', newScore);
-      const response = await axios.post(`http://localhost:5000/api/users/${user.username}/update-scores`, {
+      const response = await axios.post(`https://react-game-mc90.onrender.com/api/users/${user.username}/update-scores`, {
         score: newScore,
       });
       console.log('Score update response:', response.data);
