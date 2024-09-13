@@ -7,7 +7,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js"
   },
   "keywords": [],
   "author": "",
@@ -18,4 +19,5 @@
     "express": "^4.21.0",
     "mongoose": "^8.6.2"
   }
+  
 }
